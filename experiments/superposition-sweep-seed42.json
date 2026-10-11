@@ -1,0 +1,88 @@
+{
+  "schema": "quantumguard.sweep/1",
+  "generated_utc": "2026-10-11T12:58:02+00:00",
+  "circuit": "superposition",
+  "shots": 4000,
+  "seed": 42,
+  "settings": {
+    "simulator": "qiskit_aer.AerSimulator (local, CPU, statevector/density auto-select)",
+    "qiskit_version": "2.5.2",
+    "qiskit_aer_version": "0.17.2",
+    "shots": 4000,
+    "noise_strength": 0.05,
+    "seed": 42,
+    "seed_simulator": 42,
+    "seed_transpiler": 42,
+    "basis_gates": [
+      "cx",
+      "id",
+      "rz",
+      "sx",
+      "x"
+    ],
+    "coupling_map": null,
+    "noise_model": {
+      "one_qubit_depolarizing": {
+        "gates": [
+          "sx",
+          "x"
+        ],
+        "p": 0.05
+      },
+      "two_qubit_depolarizing": {
+        "gates": [
+          "cx"
+        ],
+        "p": 0.1
+      },
+      "readout_error": {
+        "p01": 0.05,
+        "p10": 0.05
+      }
+    }
+  },
+  "runs": [
+    {
+      "noise": 0.0,
+      "tvd": 0.0,
+      "ideal_counts": {
+        "0": 1982,
+        "1": 2018
+      },
+      "noisy_counts": {
+        "0": 1982,
+        "1": 2018
+      },
+      "transpiled": {
+        "depth": 4,
+        "size": 3,
+        "two_qubit_gates": 0,
+        "gate_counts": {
+          "rz": 2,
+          "sx": 1
+        }
+      }
+    },
+    {
+      "noise": 0.05,
+      "tvd": 0.005249999999999977,
+      "ideal_counts": {
+        "0": 1982,
+        "1": 2018
+      },
+      "noisy_counts": {
+        "0": 2003,
+        "1": 1997
+      },
+      "transpiled": {
+        "depth": 4,
+        "size": 3,
+        "two_qubit_gates": 0,
+        "gate_counts": {
+          "rz": 2,
+          "sx": 1
+        }
+      }
+    }
+  ]
+}
